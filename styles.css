@@ -40,11 +40,18 @@ body{
     height: 200vh;
     display:grid;
     grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 1fr minmax(0, 8fr) 1fr;
     background-color: azure;
 }
-
+/* .gridbox *{
+    width: 100%;
+    height: auto;
+} */
 .centerpane{
     background-color: white;
+}
+.centerpane *{
+    max-width: 100%;
 }
 .row{
     margin-top:10px;
@@ -52,6 +59,10 @@ body{
     display:flex;
     max-height: 30%;
     gap: 10px;
+}
+.row >*{
+    min-width: 0; /*this is somehow necessary to get the items to shrink into the space*/
+    height: auto;
 }
 .label-container{
     display:flex;
