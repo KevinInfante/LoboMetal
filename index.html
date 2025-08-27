@@ -11,19 +11,19 @@
 
     <!-- header/navbar using flexbox-->
     <div class="header">
-        <div style="display: flex;">
+        <div style="display: flex;" class="logo-container">
             <img  width="225" src="images/logo-cropped.PNG">
             <div class="label-container">
                 <!-- <img class="label1" src="images/logo-label.png"> -->
                  <label>LOBO METAL LLC.</label>
-                 <label class="caption">liscence #:</label>
+                 <label class="caption">liscence #CCC1336856:</label>
             </div>
         </div>
         <div class="navbar">
             <button class = "nav-button">Commercial</button>
             <button class = "nav-button">Residential</button>
-            <button class = "nav-button">About</button>
-            <button class = "nav-button">Contact Us</button>
+            <a href="#about"><button class = "nav-button">About</button></a>
+            <a href="#contact"><button class = "nav-button">Contact Us</button></a>
         </div>
     </div>
     <!-- page body using grid-->
@@ -37,6 +37,44 @@
                 <img src="https://lh3.googleusercontent.com/p/AF1QipMoYmfWPbcqjZ1TTBmdej_Fy7tUgTrckpDfEC4H=s1360-w1360-h1020-rw">
                 <img src="https://lh3.googleusercontent.com/p/AF1QipMslEqw3Ug61caStfr5g3m6Kz6Id-qCRvJqPYmg=s1360-w1360-h1020-rw">
              </div>
+
+             <section id="about" style="display:flex;" class="description">
+                <div>
+                    <div style="justify-self: center;">
+                        <h1>About</h1>
+                    </div>
+                    <p>We are a trusted family owned busniess dedicated to delivering luxury results with lating
+                        quality. Specializing in roofing, interior renovations, window installations, and siding, 
+                        we bring expert craftsmanship and a personal touch to every project, residential or 
+                        commericial.
+                    </p>
+                </div>
+             </section>
+
+             <div class="row">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipP6PFwFFXoEWQu36F_Ag6Cd1jX8bpieYfimCmIw=s1360-w1360-h1020-rw">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMg-HyGOXSdBzTe0br8J4GxAsKQera2qr5ahrYy=s1360-w1360-h1020-rw">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMWUmOkopFfBqvVWQhSUOKx9UZqQrfU8VMBaC5O=s1360-w1360-h1020-rw">
+             </div>
+
+             <section id="contact">
+                <div style="justify-self: center;">
+                        <h1>Contact Us</h1>
+                    </div>
+                <div class="contact-grid"> <!-- grid container that will contain input fields-->
+                    <div><input type="text" placeholder="first name"></div>
+                    <div><input type="text" placeholder="last name"></div>
+
+                    <div><input type="text" placeholder="phone number"></div>
+                    <div><input type="text" placeholder="subject"></div>
+
+                    <div style="grid-column: span 2;">
+                        <textarea placeholder="Tell us how we can help"></textarea>
+                    </div>
+                </div>
+             </section>
+             
+             
         </div>
         <div></div>
     </div>

@@ -11,6 +11,13 @@ body{
     background-color: azure; /*prob change later */
 }
 
+.logo-container{
+    margin: 8px;
+}
+.logo-container img{
+    margin-right: 8px;
+}
+
 .navbar{
     display: flex;
     background-color:rgb(39, 120, 176);
@@ -37,6 +44,8 @@ body{
 }
 
 .gridbox{
+    font-size: 0; /*This is to remove space below the images*/
+    margin-top: 10px;
     height: 200vh;
     display:grid;
     grid-template-columns: 1fr 8fr 1fr;
@@ -76,9 +85,9 @@ body{
     font-size: 3rem;
     justify-self: center;
 }
-.caption{
+.label-container .caption{
     justify-self:normal;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: arial;
     color:rgba(0,0,0, 0.25)
 }
@@ -88,4 +97,35 @@ body{
     justify-self: center;
     align-self: center;
     max-width: 400px;
+}
+
+section *{ /* space star for all descendents*/
+    font-size: 1.5rem;
+}
+
+.contact-grid {
+    display: grid;
+    /* background-color: color(srgb rgb(59, 59, 59) green blue); */
+    background-color: rgb(56, 56, 56);
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 2rem; */
+    margin-bottom: 10px;
+}
+.contact-grid >*{
+    width: 100%;
+    padding: 10px;
+}
+.contact-grid *{
+    /* align-items: center;
+    justify-content: center;
+    justify-self: center; */
+    width: 95%;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(39, 120, 176);
 }
