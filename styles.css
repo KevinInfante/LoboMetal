@@ -105,22 +105,24 @@ section *{ /* space star for all descendents*/
 
 .contact-grid {
     display: grid;
-    /* background-color: color(srgb rgb(59, 59, 59) green blue); */
-    background-color: rgb(56, 56, 56);
-    grid-template-rows: 1fr 1fr 2fr;
     grid-template-columns: 1fr 1fr;
-    /* gap: 2rem; */
+    grid-template-rows: auto auto auto;
+    gap: 10px;              /* spacing between items */
+    padding: 10px;          /* spacing around grid */
+    background-color: rgb(56, 56, 56);
     margin-bottom: 10px;
 }
-.contact-grid >*{
+
+.contact-grid input,
+.contact-grid textarea {
     width: 100%;
     padding: 10px;
+    box-sizing: border-box; /* ensures padding stays inside width */
 }
-.contact-grid *{
-    /* align-items: center;
-    justify-content: center;
-    justify-self: center; */
-    width: 95%;
+
+.contact-grid textarea {
+    grid-column: span 2; /* let textarea span both columns */
+    resize: none;
 }
 
 h1{
