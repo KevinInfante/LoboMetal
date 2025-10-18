@@ -12,19 +12,38 @@ body{
 }
 
 .logo-container{
+    display: flex;
     margin: 8px;
 }
 .logo-container img{
+    width: 225px;
     margin-right: 8px;
 }
 
 .navbar{
     display: flex;
-    background-color:rgb(39, 120, 176);
+    background-color:#2778b0;
     flex-basis: 80px;
     justify-content:center;
     align-items: center;
-    gap:10px;
+    /* gap:10px; */
+}
+/*
+.nav-hamburger-container{
+    /* height: 100%; */
+    /* display: flex;
+    justify-content: right; */
+/*}*/
+.nav-hamburger{
+    /* justify-self: right; */
+    width: 65px;
+    height: 50px;
+    margin: 10px;
+    display: none;
+    background-color: #2778b0;
+    padding: 5px 12px;
+    border: 1.6px, solid, black;
+    border-radius: 4px;
 }
 
 .nav-button{
@@ -35,6 +54,7 @@ body{
     border-radius: 10px;
     min-height: 40px;
     border: 1.6px, solid, black;
+    margin: 10px 5px;
 }
 
 .nav-button:hover{
@@ -46,7 +66,7 @@ body{
 .gridbox{
     font-size: 0; /*This is to remove space below the images*/
     margin-top: 10px;
-    height: 200vh;
+    height: auto;
     display:grid;
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-columns: 1fr minmax(0, 8fr) 1fr;
@@ -130,4 +150,30 @@ h1{
     font-weight: bold;
     font-size: 2rem;
     color: rgb(39, 120, 176);
+}
+
+@media (max-width: 768px) {
+    html{
+        font-size: 11px; /* rem is based on the font-size of the root element, html, which is 16px by default*/
+    }
+    .logo-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .logo-container img{
+        width: 150px;
+    }
+    /*change the flex direction of the navbar*/
+    .navbar{
+        flex-direction: column;
+    }
+    /*set the display on the mobile navbutton*/
+    .nav-hamburger{
+        display: flex;
+    }
+    /*maybe add a class or change display to none for the other nav items*/
+    .nav-button{
+        display:none;
+    }
 }
