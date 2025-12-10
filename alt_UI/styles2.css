@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+
+}
+.header img{
+    width: 200px;
+    height: 200px;
+}
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.centerpane{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 80%;
+    max-width: 80%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+img.img {
+    flex: 1 1 100%; /*flex-grow, flex-shrink, flex-basis. Note, this does not seem to affect the layout rn*/
+    width: 100%;
+    min-width: 1px; /*This seems to be the key thing for having my desired format*/
+    max-width: 100%;
+    height: auto;
+}
+/*
+My google search was "CSS how to make images shrink to fit flexbox"
+Where I got the info for img.img:
+https://www.reddit.com/r/css/comments/1bo1sd6/image_sizing_in_flexbox/
+*/
