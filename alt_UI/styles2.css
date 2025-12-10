@@ -62,6 +62,7 @@ https://www.reddit.com/r/css/comments/1bo1sd6/image_sizing_in_flexbox/
     padding: 1rem 0 1rem 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
 .nav-hamburger-container{
@@ -74,6 +75,32 @@ https://www.reddit.com/r/css/comments/1bo1sd6/image_sizing_in_flexbox/
     width: 65px;
     height: 50px;
     padding: 8px;
+}
+.nav-button{
+    font-size: 1.2rem;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    height: fit-content;
+}
+.nav-button:hover{
+    border: 1.6px solid white;
+}
+
+.contact-grid{  /*2x2, with 1 wide row below*/
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: darkslategray;
+    gap: 0.5rem;
+    padding: 10px;
+    margin: 0.5rem 0 1rem 0;
+}
+.contact-grid *{
+    font-size: 1.2rem;
+}
+.contact-grid textarea{
+    grid-column: span 2;
 }
 
 @media (max-width: 768px){
