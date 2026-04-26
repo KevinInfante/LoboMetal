@@ -22,3 +22,13 @@ Website for Lobo Metal LLc
 - Add a testimonials section, probably in a carousel
 - add an email field to the contact section
 - maybe add contact info for Carlos and Adolfo
+
+**Disjointed Thoughts**
+Note on the lobo llc:
+-try to change the grid to be a bit less arcane, maybe. Like Directly say the column position for the
+ left margin div, centerpane, and right margin div
+-currently, h1s inside the centerpane are contained by divs, that have justify-self set to senter, in inline html. I should find cleaner way to do this.
+
+-idea slogans
+-Roofing, remodeling, renovation, repair
+-"Construction with integrity"

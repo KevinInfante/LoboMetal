@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobo Metal</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- <h1>LOBO METAL LLC</h1> -->
+
+    <!-- header/navbar using flexbox-->
+    <div class="header">
+        <div class="logo-container">
+            <img  src="../images/logo-cropped.PNG">
+            <div class="label-container">
+                <!-- <img class="label1" src="images/logo-label.png"> -->
+                 <label>LOBO METAL LLC.</label>
+                 <label class="caption">liscence #CCC1336856:</label>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="nav-hamburger-container">
+                <button class = "nav-hamburger"> <img style="width: inherit;"
+                    src="../images/hamburger-menu.png">
+                </button>
+            </div>
+            <button class = "nav-button">Commercial</button>
+            <button class = "nav-button">Residential</button>
+            <a href="#about"><button class = "nav-button">About</button></a>
+            <a href="#contact"><button class = "nav-button">Contact Us</button></a>
+        </div>
+    </div>
+    <!-- page body using grid-->
+    <div class="flexbox">
+        <div class="centerpane">
+            <img class="img" src="https://lh3.googleusercontent.com/p/AF1QipPFKxjjoVFLEohOh0T354c1VQMersbRx5rU1tkz=s1360-w1360-h1020-rw">
+
+            <!-- I'm gonna want several rows, each of which will probably be flex -->
+             <div class="row">
+                <img class="img" src="https://lh3.googleusercontent.com/p/AF1QipMoYmfWPbcqjZ1TTBmdej_Fy7tUgTrckpDfEC4H=s1360-w1360-h1020-rw">
+                <img class="img" src="https://lh3.googleusercontent.com/p/AF1QipMslEqw3Ug61caStfr5g3m6Kz6Id-qCRvJqPYmg=s1360-w1360-h1020-rw">
+             </div>
+
+             <section id="about" style="display:flex;" class="description">
+                <div>
+                    <div style="justify-self: center;">
+                        <h1>About</h1>
+                    </div>
+                    <p>We are a trusted family owned busniess dedicated to delivering luxury results with lating
+                        quality. Specializing in roofing, interior renovations, window installations, and siding, 
+                        we bring expert craftsmanship and a personal touch to every project, residential or 
+                        commercial.
+                    </p>
+                </div>
+             </section>
+
+             <div class="row">
+                <img class="img" src="https://lh3.googleusercontent.com/p/AF1QipP6PFwFFXoEWQu36F_Ag6Cd1jX8bpieYfimCmIw=s1360-w1360-h1020-rw">
+                <img class="img" src="https://lh3.googleusercontent.com/p/AF1QipMg-HyGOXSdBzTe0br8J4GxAsKQera2qr5ahrYy=s1360-w1360-h1020-rw">
+                <img class="img" src="https://lh3.googleusercontent.com/p/AF1QipMWUmOkopFfBqvVWQhSUOKx9UZqQrfU8VMBaC5O=s1360-w1360-h1020-rw">
+             </div>
+
+             <section id="contact">
+                <div style="justify-self: center;">
+                    <h1>Contact Us</h1>
+                </div>
+                <div class="contact-grid">
+                    <input type="text" placeholder="first name">
+                    <input type="text" placeholder="last name">
+
+                    <input type="text" placeholder="phone number">
+                    <input type="text" placeholder="subject">
+
+                    <textarea placeholder="Tell us how we can help"></textarea>
+                </div>
+
+             </section>
+             
+             
+        </div>
+        <div></div>
+    </div>
+    <script src="../index.js"></script>
+</body>
+</html>
