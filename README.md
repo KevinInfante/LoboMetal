@@ -18,3 +18,7 @@ Website for Lobo Metal LLc
 - - turn the subject field into a drop-down.
 👋 add a javascript page 
 - - with support for scroll on-click
+- use variables in the CSS for the colors (e.g. color1 for blue background, color2 for text, etc.)
+- Add a testimonials section, probably in a carousel
+- add an email field to the contact section
+- maybe add contact info for Carlos and Adolfo
