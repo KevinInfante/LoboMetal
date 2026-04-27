@@ -1,17 +1,13 @@
-const ham = document.querySelector(".nav-hamburger");
+const hamburger = document.querySelector('.nav-hamburger');
+const navLinks = document.querySelector('.nav-links');
 
-ham.addEventListener("click", function(){
-    let buts = document.querySelectorAll(".nav-button")
+hamburger.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+});
 
-    if( buts[0].style.display === "none" ){
-        for(let i = 0; i<buts.length; i++){
-            buts[i].style.display = "flex";
-        }
-    }
-    else{
-        for(let i = 0; i<buts.length; i++){
-            buts[i].style.display = "none";
-        }
-    }
-    
+// Close menu when a link is clicked
+document.querySelectorAll('.nav-button').forEach(link => {
+    link.addEventListener('click', function() {
+        navLinks.classList.remove('active');
+    });
 });

@@ -3,117 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lobo Metal</title>
+    <title>Lobo Metal - Professional Roofing & Construction</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- <h1>LOBO METAL LLC</h1> -->
-
-    <!-- header/navbar using flexbox-->
-    <div class="header">
-        <div class="logo-container">
-            <img  src="images/logo-cropped.PNG">
-            <div class="label-container">
-                <!-- <img class="label1" src="images/logo-label.png"> -->
-                 <label>LOBO METAL LLC.</label>
-                 <label class="caption">liscence #CCC1336856:</label>
+    <!-- Header with branding and navigation -->
+    <header class="header">
+        <div class="header-top">
+            <div class="logo-container">
+                <img src="images/logo-cropped.PNG" alt="Lobo Metal Logo">
+                <div class="label-container">
+                    <div class="company-name">LOBO METAL LLC</div>
+                    <div class="company-license">License #CCC1336856</div>
+                </div>
             </div>
         </div>
-        <div class="navbar">
-            <div class="nav-hamburger-container">
-            <button class = "nav-hamburger"> <img style="width: inherit;"
-                src="images/hamburger-menu.png">
+        <nav class="navbar">
+            <button class="nav-hamburger" aria-label="Toggle menu">
+                <img src="images/hamburger-menu.png" alt="Menu">
             </button>
+            <div class="nav-links">
+                <a href="#commercial" class="nav-button">Commercial</a>
+                <a href="#residential" class="nav-button">Residential</a>
+                <a href="#interior" class="nav-button">Interior</a>
+                <a href="#about" class="nav-button">About</a>
+                <a href="#contact" class="nav-button">Contact</a>
             </div>
-            <a href="#commercial"><button class = "nav-button">Commercial</button></a>
-            <a href="#residential"><button class = "nav-button">Residential</button></a>
-            <a href="#interior"><button class = "nav-button">Interior</button></a>
-            <a href="#about"><button class = "nav-button">About</button></a>
-            <a href="#contact"><button class = "nav-button">Contact Us</button></a>
-        </div>
-    </div>
-    <!-- page body using grid-->
-    <div class="gridbox">
-        <div></div>
-        <div class="centerpane">
-            <img src="https://lh3.googleusercontent.com/p/AF1QipPFKxjjoVFLEohOh0T354c1VQMersbRx5rU1tkz=s1360-w1360-h1020-rw">
+        </nav>
+    </header>
+    <!-- Main content area -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Featured image -->
+            <section class="featured-image">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPFKxjjoVFLEohOh0T354c1VQMersbRx5rU1tkz=s1360-w1360-h1020-rw" alt="Featured project">
+            </section>
 
-            <!-- I'm gonna want several rows, each of which will probably be flex -->
-             <div class="row">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipMoYmfWPbcqjZ1TTBmdej_Fy7tUgTrckpDfEC4H=s1360-w1360-h1020-rw">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipMslEqw3Ug61caStfr5g3m6Kz6Id-qCRvJqPYmg=s1360-w1360-h1020-rw">
-             </div>
+            <!-- About section -->
+            <section id="about" class="section about-section">
+                <h2>About Lobo Metal LLC</h2>
+                <p>We are a trusted family-owned business dedicated to delivering luxury results with lasting quality. Specializing in roofing, interior renovations, window installations, and siding, we bring expert craftsmanship and a personal touch to every project, residential or commercial.</p>
+            </section>
 
-             <section id="about" style="display:flex;" class="description">
-                <div>
-                    <div style="justify-self: center;">
-                        <h1>About</h1>
+            <!-- Residential section -->
+            <section id="residential" class="section">
+                <h2>Residential</h2>
+                <div class="gallery-row">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipP6PFwFFXoEWQu36F_Ag6Cd1jX8bpieYfimCmIw=s1360-w1360-h1020-rw" alt="Residential project 1">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipMg-HyGOXSdBzTe0br8J4GxAsKQera2qr5ahrYy=s1360-w1360-h1020-rw" alt="Residential project 2">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipMWUmOkopFfBqvVWQhSUOKx9UZqQrfU8VMBaC5O=s1360-w1360-h1020-rw" alt="Residential project 3">
+                </div>
+            </section>
+
+            <!-- Commercial section -->
+            <section id="commercial" class="section">
+                <h2>Commercial</h2>
+                <div class="gallery-row">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipNdBqnNWXnZdMDtU51OsDN7KXJuWUUxfUfPKGKH=s1360-w1360-h1020" alt="Commercial project 1">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipPHvk7eGJzP1d0DZh0Ykw_fvOIUBhMmwgaFfVxh=s1360-w1360-h1020" alt="Commercial project 2">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipNiRpL6x5O4uhPGKyDZlPR9vgzR62Y4FHn09LE6=s1360-w1360-h1020" alt="Commercial project 3">
+                </div>
+            </section>
+
+            <!-- Interior section -->
+            <section id="interior" class="section">
+                <h2>Interior</h2>
+                <div class="gallery-row">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipO9VJ3AkK2K_--xxoewWgMgqlvi24S0xU0J4H3p=s1360-w1360-h1020" alt="Interior project 1">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipOJc3rV9q5LsgI80XjmYv-jVzXpoWjr0fwpjU62=s1360-w1360-h1020" alt="Interior project 2">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipODs2GFigrYJ5ZftMc9WRyolbbAkPNLqkuh-hsA=s1360-w1360-h1020" alt="Interior project 3">
+                </div>
+            </section>
+
+            <!-- Contact section -->
+            <section id="contact" class="section contact-section">
+                <h2>Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Job Coordinator</h3>
+                        <p>[Name]</p>
+                        <p class="contact-detail">[Phone Number]</p>
+                        <p class="contact-detail">[Email Address]</p>
                     </div>
-                    <p>We are a trusted family owned business dedicated to delivering luxury results with lasting
-                        quality. Specializing in roofing, interior renovations, window installations, and siding, 
-                        we bring expert craftsmanship and a personal touch to every project, residential or 
-                        commericial.
-                    </p>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Phone">
+                        <textarea placeholder="Message" rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
                 </div>
-             </section>
-            
-             <section id="residential">
-                <div style="justify-self: center;">
-                    <h1>Residential</h1>
-                </div>
-                <div class="row">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipP6PFwFFXoEWQu36F_Ag6Cd1jX8bpieYfimCmIw=s1360-w1360-h1020-rw">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipMg-HyGOXSdBzTe0br8J4GxAsKQera2qr5ahrYy=s1360-w1360-h1020-rw">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipMWUmOkopFfBqvVWQhSUOKx9UZqQrfU8VMBaC5O=s1360-w1360-h1020-rw">
-                </div>
-             </section>
-
-              <section id="commercial">
-                <div style="justify-self: center;">
-                    <h1>Commercial</h1>
-                </div>
-                <div class="row">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipNdBqnNWXnZdMDtU51OsDN7KXJuWUUxfUfPKGKH=s1360-w1360-h1020">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipPHvk7eGJzP1d0DZh0Ykw_fvOIUBhMmwgaFfVxh=s1360-w1360-h1020">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipNiRpL6x5O4uhPGKyDZlPR9vgzR62Y4FHn09LE6=s1360-w1360-h1020">
-                </div>
-             </section>
-
-             <section id="interior">
-                 <div style="justify-self: center;">
-                    <h1>Interior</h1>
-                </div>
-                <div class="row">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipO9VJ3AkK2K_--xxoewWgMgqlvi24S0xU0J4H3p=s1360-w1360-h1020">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipOJc3rV9q5LsgI80XjmYv-jVzXpoWjr0fwpjU62=s1360-w1360-h1020">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipODs2GFigrYJ5ZftMc9WRyolbbAkPNLqkuh-hsA=s1360-w1360-h1020">
-                </div>
-             </section>
-
-             <section id="contact">
-                <div style="justify-self: center;">
-                    <h1>Contact Us</h1>
-                    <h2>Job Coordinator: [name]</h2>
-                    <h2>[phone number]</h2>
-                    <h2>[email address]</h2>
-                </div>
-                <div class="contact-grid">
-                    <input type="text" placeholder="first name">
-                    <input type="text" placeholder="last name">
-
-                    <input type="text" placeholder="phone number">
-                    <input type="text" placeholder="subject">
-
-                    <textarea placeholder="Tell us how we can help"></textarea>
-                </div>
-                <button style="justify-self: center; width: 150px; height: 50px;">Send email</button>
-
-             </section>
-             
-             
+            </section>
         </div>
-        <div></div>
-    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Lobo Metal LLC. All rights reserved. License #CCC1336856</p>
+    </footer>
+
     <script src="index.js"></script>
 </body>
 </html>
