@@ -205,6 +205,7 @@ body {
     margin: 2rem auto;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
+    scroll-margin-top: 275px;
 }
 
 .section:hover {
@@ -382,7 +383,7 @@ body {
     .nav-links {
         flex-direction: column;
         position: absolute;
-        top: 180px;
+        top: 100%;
         left: 0;
         right: 0;
         background-color: var(--primary-blue-dark);
@@ -407,6 +408,10 @@ body {
 
     .nav-hamburger {
         display: flex;
+    }
+
+    .navbar {
+        position: relative;
     }
 
     .container {
