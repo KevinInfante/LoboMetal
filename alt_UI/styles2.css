@@ -1,5 +1,7 @@
 :root{
     --bg:#2778b0;
+    /*logo blue: rgb(39, 120, 176)*/
+    /*logo red: rgb(200, 71, 50)*/
     --bg-light: azure;
 
     background-color: var(--bg-light);
