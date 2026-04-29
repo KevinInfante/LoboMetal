@@ -1,0 +1,24 @@
+{
+  "name": "lobometal",
+  "version": "1.0.0",
+  "description": "Website for Lobo Metal LLc",
+  "homepage": "https://github.com/kevininfante/lobometal#readme",
+  "bugs": {
+    "url": "https://github.com/kevininfante/lobometal/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevininfante/lobometal.git"
+  },
+  "license": "ISC",
+  "author": "Kevin Infante",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
