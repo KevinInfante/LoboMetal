@@ -301,6 +301,44 @@ body {
     margin-top: 1.5rem;
 }
 
+.services-header {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--accent-red);
+    display: inline-block;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services-list li {
+    font-size: 1.4rem;
+    font-weight: 550;
+    color: var(--primary-blue);
+    padding-left: 1.8rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.services-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: var(--accent-red);
+    font-size: 1.3rem;
+}
+
 /* ============================================================================
    GALLERY
    ============================================================================ */
